@@ -7,7 +7,7 @@ services:
       APP_PORT: 6060
 
   web:
-    image: ghcr.io/lex-2610/stundenzettel-umbrel:14.0.0
+    image: ghcr.io/lex-2610/stundenzettel-umbrel:14.0.0@sha256:22dd9ce8c5fe1427d4bd1764c3007c5f52f316df88f2b4fab321f4ecc029efe1
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
