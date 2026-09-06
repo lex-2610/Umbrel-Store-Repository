@@ -20,7 +20,7 @@ SQLite-Datenbanken, Bilder, Uploads, Logs und Anwendungsbackups liegen unter
 
 Das öffentliche Multi-Arch-Image
 `ghcr.io/lex-2610/stundenzettel-umbrel:14.0.0` wird durch GitHub Actions direkt
-aus Commit `7a03402317b3775029d207f7c547e28da16339d9` des öffentlichen
+aus Commit `7a03402317b3775029d207f7c547e28da16339d9` des privaten
 Quellrepositorys `lex-2610/Template-Demo-Stundenzettel` gebaut. Anwendungscode
 wird nicht in diesen Store kopiert.
 
