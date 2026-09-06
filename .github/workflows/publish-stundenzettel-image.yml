@@ -24,10 +24,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out application source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: ${{ env.SOURCE_REPOSITORY }}
           ref: ${{ env.SOURCE_REF }}
+          ssh-key: ${{ secrets.SOURCE_REPOSITORY_DEPLOY_KEY }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -58,4 +59,3 @@ jobs:
             org.opencontainers.image.version=${{ env.IMAGE_TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
