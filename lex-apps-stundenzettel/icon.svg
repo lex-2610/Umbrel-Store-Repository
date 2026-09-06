@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Stundenzettel</title>
+  <defs>
+    <linearGradient id="background" x1="24" y1="20" x2="232" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17223B"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" fill="url(#background)"/>
+  <path d="M70 42h86l30 30v142H70z" fill="#F8FAFC"/>
+  <path d="M156 42v30h30" fill="#CBD5E1"/>
+  <path d="M91 103h74M91 127h46M91 151h36" fill="none" stroke="#64748B" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="158" cy="164" r="39" fill="#22C55E" stroke="#0B1220" stroke-width="8"/>
+  <path d="M158 142v23l17 11" fill="none" stroke="#F8FAFC" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+

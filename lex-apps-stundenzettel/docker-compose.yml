@@ -1,0 +1,38 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: lex-apps-stundenzettel_web_1
+      APP_PORT: 6060
+
+  web:
+    image: ghcr.io/lex-2610/stundenzettel-umbrel:14.0.0
+    user: "1000:1000"
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      NODE_ENV: production
+      BIND_HOST: 0.0.0.0
+      PORT: 6060
+      ALLOW_INSECURE_HTTP: "true"
+      ADMIN_USERNAME: admin
+      ADMIN_DISPLAY_NAME: Administrator
+      ADMIN_PASSWORD: "$APP_PASSWORD"
+      CSRF_SECRET: "$APP_SEED"
+      CORS_ALLOWED_ORIGINS: "http://${DEVICE_DOMAIN_NAME}:6066,https://${DEVICE_DOMAIN_NAME}:6066,http://${DEVICE_HOSTNAME}:6066,https://${DEVICE_HOSTNAME}:6066"
+      STORAGE_BASE_PATH: /app/storage
+      PATH_UPLOADS_TEMP: /app/storage/uploads/temp
+      PATH_IMAGES: /app/storage/images
+      PATH_LOGS: /app/storage/logs
+      PATH_STORAGE_BACKUPS: /app/storage/backups
+      LOG_LEVEL: info
+      LOG_RETENTION_DAYS: 30
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/storage
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get({hostname:'localhost',port:6060,path:'/api/health'},r=>process.exit(r.statusCode>=200&&r.statusCode<300?0:1)).on('error',()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s

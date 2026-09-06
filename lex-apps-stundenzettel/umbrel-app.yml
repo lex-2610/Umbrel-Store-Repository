@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: lex-apps-stundenzettel
+name: Stundenzettel
+tagline: Digitale Stundenzettel für kleine Betriebe
+category: automation
+version: "14.0.0"
+icon: https://raw.githubusercontent.com/lex-2610/Umbrel-Store-Repository/main/lex-apps-stundenzettel/icon.svg
+description: >-
+  Stundenzettel ist eine selbst gehostete Anwendung zur Erfassung und
+  Verwaltung von Arbeitszeiten, Kunden, Projekten und zugehörigen Dateien.
+
+
+  Die Anwendung läuft vollständig auf deinem Umbrel. Stundenzettel,
+  Benutzerkonten, Bilder und Backups werden lokal im persistenten App-Speicher
+  abgelegt. Beim ersten Start meldest du dich mit dem Benutzernamen admin und
+  dem von Umbrel angezeigten App-Passwort an.
+developer: lex-2610
+website: https://github.com/lex-2610/Template-Demo-Stundenzettel
+submitter: lex-2610
+submission: https://github.com/lex-2610/Umbrel-Store-Repository
+repo: https://github.com/lex-2610/Template-Demo-Stundenzettel
+support: https://github.com/lex-2610/Umbrel-Store-Repository/issues
+gallery: []
+releaseNotes: ""
+dependencies: []
+port: 6066
+path: ""
+defaultUsername: admin
+deterministicPassword: true
