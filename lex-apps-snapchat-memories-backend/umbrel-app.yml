@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lex-apps-snapchat-memories-backend
 category: files
 name: Snapchat Memories API
-version: "1.0.0"
+version: "1.0.1"
 tagline: Serve your memories to the iOS viewer
 description: >-
   Provides the media API for the Snapchat Memories iOS viewer. It serves images,

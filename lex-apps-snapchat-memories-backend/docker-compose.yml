@@ -5,7 +5,7 @@ services:
       APP_PORT: 3333
 
   app:
-    image: ghcr.io/lex-2610/memorys-backend:v1.0.0
+    image: ghcr.io/lex-2610/memorys-backend:v1.0.1
     restart: on-failure
     init: true
     environment:
@@ -16,4 +16,3 @@ services:
       CACHE_PATH: /app/.cache
     volumes:
       - ${APP_DATA_DIR}/media:/app/downloads:ro
-      - ${APP_DATA_DIR}/cache:/app/.cache
