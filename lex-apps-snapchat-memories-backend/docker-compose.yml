@@ -1,0 +1,19 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: lex-apps-snapchat-memories-backend_app_1
+      APP_PORT: 3333
+
+  app:
+    image: ghcr.io/lex-2610/memorys-backend:v1.0.0
+    restart: on-failure
+    init: true
+    environment:
+      NODE_ENV: production
+      PORT: 3333
+      HOST: 0.0.0.0
+      MEDIA_PATH: /app/downloads
+      CACHE_PATH: /app/.cache
+    volumes:
+      - ${APP_DATA_DIR}/media:/app/downloads:ro
+      - ${APP_DATA_DIR}/cache:/app/.cache

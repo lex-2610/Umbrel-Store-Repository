@@ -6,8 +6,9 @@ Community App Store für die privat betriebene Stundenzettel-Anwendung.
 
 1. In umbrelOS **App Store → Community App Stores** öffnen.
 2. `https://github.com/lex-2610/Umbrel-Store-Repository` hinzufügen.
-3. **Stundenzettel** installieren.
-4. Mit `admin` und dem in umbrelOS angezeigten App-Passwort anmelden.
+3. **Stundenzettel** oder **Snapchat Memories API** installieren.
+4. Für Stundenzettel mit `admin` und dem in umbrelOS angezeigten App-Passwort anmelden.
+5. Für die Snapchat Memories API den API-Endpunkt deiner Umbrel-Instanz in der iOS-App als Serveradresse eintragen.
 
 ## Speicherung und Zugriff
 
@@ -28,3 +29,7 @@ Für ein Update werden Quell-Commit und Image-Version im Workflow sowie
 Image-Tag, `version` und `releaseNotes` der App aktualisiert. Nach dem Push baut
 GitHub Actions das neue Image; umbrelOS erkennt die höhere Manifest-Version als
 Update.
+
+## Snapchat Memories API
+
+Die API stellt Medien und Metadaten für den iOS-Viewer bereit. Sie verwendet den persistenten Umbrel-Speicher unter `${APP_DATA_DIR}/media` (read-only eingebunden) und `${APP_DATA_DIR}/cache`. Die Installation setzt voraus, dass das öffentliche Image `ghcr.io/lex-2610/memorys-backend:v1.0.0` verfügbar ist.
