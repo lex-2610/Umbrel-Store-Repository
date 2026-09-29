@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Snapchat Memories API</title>
+  <defs>
+    <linearGradient id="bg" x1="24" y1="16" x2="232" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30205B"/>
+      <stop offset="1" stop-color="#111126"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" fill="url(#bg)"/>
+  <rect x="54" y="48" width="132" height="160" rx="12" transform="rotate(-9 54 48)" fill="#F8FAFC"/>
+  <rect x="82" y="62" width="122" height="146" rx="12" fill="#FFF"/>
+  <rect x="96" y="78" width="94" height="88" rx="7" fill="#FACC15"/>
+  <circle cx="166" cy="99" r="11" fill="#FFF1A6"/>
+  <path d="m103 153 24-27 17 17 13-13 26 23h-80Z" fill="#6D4AFF"/>
+  <path d="M111 183h66" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <path d="m205 48 4 12 12 4-12 4-4 12-4-12-12-4 12-4 4-12Z" fill="#FACC15"/>
+</svg>
