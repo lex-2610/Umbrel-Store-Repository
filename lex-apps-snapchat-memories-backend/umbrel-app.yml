@@ -14,6 +14,7 @@ dependencies: []
 repo: https://github.com/lex-2610/Memorys-Backend
 support: https://github.com/lex-2610/Memorys-Backend/issues
 port: 3333
-path: /openapi
+path: /admin
 gallery: []
 defaultPassword: ""
+deterministicPassword: true
