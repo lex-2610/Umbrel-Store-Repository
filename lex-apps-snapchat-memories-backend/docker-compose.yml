@@ -21,7 +21,7 @@ services:
     restart: on-failure
     init: true
     environment:
-      ADMIN_PASSWORD: "$APP_PASSWORD"
+      ADMIN_PASSWORD: "snapmemories"
       DATA_PATH: /app/data
       NODE_ENV: production
       PORT: 3333
