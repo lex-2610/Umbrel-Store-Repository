@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lex-apps-snapchat-memories-backend
 category: files
 name: Snapchat Memories API
-version: "1.0.4"
+version: "1.0.5"
 icon: https://raw.githubusercontent.com/lex-2610/Umbrel-Store-Repository/main/lex-apps-snapchat-memories-backend/icon.svg
 tagline: Serve your memories to the iOS viewer
 description: >-
@@ -17,4 +17,4 @@ port: 3333
 path: /admin
 gallery: []
 defaultPassword: "snapmemories"
-releaseNotes: "Reads Snapchat capture dates from PNG metadata and prioritizes embedded video dates. Uses backend v1.0.3."
+releaseNotes: "Uses Snapchat filename dates when video creation timestamps differ. Uses backend v1.0.4."
