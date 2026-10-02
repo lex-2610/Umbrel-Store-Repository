@@ -32,4 +32,4 @@ Update.
 
 ## Snapchat Memories API
 
-Die API stellt Medien und Metadaten für den iOS-Viewer bereit. Sie liest die Medien aus `${APP_DATA_DIR}/media` (read-only eingebunden). Dieser Ordner enthält deine importierten Medien und bleibt bei Updates erhalten. Vorschaubilder liegen im Container-Cache und werden bei Bedarf neu erzeugt. Die Installation setzt voraus, dass das öffentliche Image `ghcr.io/lex-2610/memorys-backend:v1.0.4` verfügbar ist.
+Die API stellt Medien und Metadaten für den iOS-Viewer bereit. Sie liest die Medien aus `${APP_DATA_DIR}/media` (read-only eingebunden). Dieser Ordner enthält deine importierten Medien und bleibt bei Updates erhalten. Vorschaubilder liegen in `${APP_DATA_DIR}/cache` und bleiben bei Updates erhalten. Die Installation setzt voraus, dass das öffentliche Image `ghcr.io/lex-2610/memorys-backend:v1.0.5` verfügbar ist.
